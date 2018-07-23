@@ -3,44 +3,83 @@
 
 <head>
     <meta charset="utf-8">
-    <title>laTTitude</title>
+    <title>laTTitude - Comparisons</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="https://bootswatch.com/4/united/bootstrap.css" media="screen">
 </head>
 
 <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                  <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                              </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Plots</a>
+                    </li>
+                    <li class="nav-item active">
+                            <a class="nav-link" href="comparisons.html">Comparisons<span class="sr-only">(current)</span></a>
+                          </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data.htmlS">Data</a>
+                        </li>      
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">laTTitude</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+                  </ul>
 
-        <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Plots</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Comparison</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Data</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <containter>
-        test test test
-    </containter>
+                </div>
+              </nav>
 
-</body>
+
+    <div class = "container">
+    <div class="jumbotron">
+            <h3>Latitude vs X</h3>
+            <p class="lead">The plots below were generated using the data harvested from the OpenWeatherMap API using the Matplotlib and Seaborn Python Libaries</p>
+            <hr class="my-4">
+      
+            <div class="container-fluid">
+                    <ul class="list-unstyled">
+                            <li class="media">
+                                    <a href="Temp.png" target="_blank"><img class="mr-3" src="Temp.png" alt="Temperature vs Latitude" width="500"></a>
+                                    <div class="media-body">
+                                      <h5 class="mt-0 mb-1">Latitude vs Temperature</h5>
+                                      The data shows that the maximum temperature is higher near the equator.  The figure to the left (Max Temperature vs Latitude) shows the concentration of high temperatures are distributed between -30 and 30 latitude.                    
+                                    </div>
+                                  </li>
+                                  <li class="media my-4">
+                                        <a href="Humidity.png" target="_blank"><img class="mr-3" src="Humidity.png" alt="Humidity vs Latitude" width="500"></a>
+                                    <div class="media-body">
+                                      <h5 class="mt-0 mb-1">Latitude vs Humidity</h5>
+                                      <p> with a humidity of 70% or higher are concentrated in the northern hemisphere.</p><p>  This doesnt necessarily mean that the southern hemisphere is less humid. 80.9% of the southern hemisphere surface area is water while the northern hemisphere is 60.7 yielding ~20% less surface area of land to sample cities from.  The sample size in this exercise was 4000.  The plots show in general that there are more cities in the northern hemisphere.</p>
+                                    </div>
+                                  </li>
+                                  <li class="media">
+                                        <a href="Cloudiness.png" target="_blank"><img class="mr-3" src="Cloudiness.png" alt="Cloudiness vs Latitude" width="500"></a>
+                                        <div class="media-body">
+                                          <h5 class="mt-0 mb-1">Latitude vs Cloudiness</h5>
+                                          Whether or not is cloudy doesnt seem to corralate with distance from the equator.  The sample set yields fairly even distribution between -50 and 75 latitude.  This is a large area spanning from about the middle of Greenland and the southern tip of Argentina.  
+                                        </div>
+                                      </li>
+                                      <li class="media my-4">
+                                            <a href="WindSpeed.png" target="_blank"><img class="mr-3" src="WindSpeed.png" alt="Wind Speed vs Latitude" width="500"></a>
+                                        <div class="media-body">
+                                          <h5 class="mt-0 mb-1">Latitude vs Wind Speed</h5>
+                                          Windspeed also does not appear to correspond with  with distance from the equator.  The sample set yields fairly even distribution between -50 and 75 latitude.  
+                                        </div>
+                                      </li>
+                          </ul>
+          </div>
+
+          <script src="../_vendor/jquery/dist/jquery.min.js"></script>
+          <script src="../_vendor/popper.js/dist/umd/popper.min.js"></script>
+          <script src="../_vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+          <script src="../_assets/js/custom.js"></script>
+  </body>
 
 </html>
