@@ -6,101 +6,76 @@
     <title>laTTitude</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="https://bootswatch.com/4/united/bootstrap.css" media="screen">
 </head>
 
 <body>
-    
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="#">laTTitude</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
 
-    <div class="collapse navbar-collapse" id="navbarColor01">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home
-                    <span class="sr-only">(current)</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Plots</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Comparison</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Data</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">laTTitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Plots</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
 
     <div class="container">
-        
         <div class="jumbotron">
             <h1 class="display-3">laTTitude</h1>
-            <p class="lead">latitude with attitude</p>
+            <p class="lead">latitude with attitude.</p>
             <hr class="my-4">
-            <p>The purpose of this project is to analytize how the weather changes as proximity to the equator descreases.  
-To accomplish this, we first pulled data fromm the OpenWeatherMap API to assemble a dataset on over 500 cities. 
+            <h2>Why laTTitude?</h2>
+<p>The purpose of laTTitude is to analyze how  weather changes with proximity to the equator.  </p>
+<p>To accomplish this, we first pulled data fromm the OpenWeatherMap API to assemble a dataset on over 500 cities. After assembling the
+    dataset, we used Seaborn and Matplotlib to plot various aspects of the weather verses the city's latitude. Factors that were included:
+    Temperature Cloudienss Wind Speed Humidity This site provides the source data and visualizations created as part of the
+    analysis as well as explainations and descriptions of any trends and correlations witnessed.</p>
+            
 
-After assembling the dataset, we used Matplotlib to plot various aspects of the weather verses the city's latitude.
-
-Factors that were included:
-Temperature
-Cloudienss
-Wind Speed
-Humidity
-
-This site provides the source data and visualizations created as part of the analysis as well as explainations and descriptions of any trends and correlations witnessed.</p>
+        </div>
+        <div class="card border-light mb-3">
+            <h3 class="card-header">Vizzes</h3>
+            <div class="card-body">
+            <h5 class="card-title">Something about weather data.</h5>
+            <h6 class="card-subtitle text-muted">what is this?</h6>
+            </div>
+            <div>
+                <img src="assets/Temp.png" class="img-fluid" alt="Responsive image">
+            </div>
             <p class="lead">
+            <a class="btn btn-primary btn-lg" href="vizzes.html" role="button">Learn more!</a>
+
             </p>
         </div>
+            
 
-        <div class = "container">
-            <div class="card border-light mb-3">  
-                <h3 class="card-header">Vizzes</h3>
-                <div class="card-body">
-                    <h5 class="card-title">Something about weather data.</h5>
-                    <h6 class="card-subtitle text-muted">what is this?</h6>
-                </div>
-            <div>
-    <a href="https://plot.ly/~jkennedy1974/30/?share_key=AsVSQecsBCW8CuWqrLYib0" target="_blank" title="1033 Program Distributions by State"
-        style="display: block; text-align: center;">
-<img src="https://plot.ly/~jkennedy1974/30.png?share_key=AsVSQecsBCW8CuWqrLYib0" class="img-fluid" alt="1033 Program Distributions by State"
-        />
-    </a>
-    <script data-plotly="jkennedy1974:30" sharekey-plotly="AsVSQecsBCW8CuWqrLYib0" src="https://plot.ly/embed.js" async></script>
-    </div>
-
-<div class="alert alert-dismissible alert-warning">
-    <button type="button" class="close" data-dismiss="alert">&times;</button>
-    <h4 class="alert-heading">Warning!</h4>
-    <p class="mb-0">Best check yo self, you're not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna,
-        <a href="#" class="alert-link">vel scelerisque nisl consectetur et</a>.</p>
-</div>
-    </div>
-
-            </div>
+        </div>
 
 
-         </div>   
-
-
-        
-
-        
-</div>
-
-
-    <script src="../_vendor/jquery/dist/jquery.min.js"></script>
-    <script src="../_vendor/popper.js/dist/umd/popper.min.js"></script>
-    <script src="../_vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="../_assets/js/custom.js"></script>
+        <script src="../_vendor/jquery/dist/jquery.min.js"></script>
+        <script src="../_vendor/popper.js/dist/umd/popper.min.js"></script>
+        <script src="../_vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../_assets/js/custom.js"></script>
 </body>
 
 </html>
