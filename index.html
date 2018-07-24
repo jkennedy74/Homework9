@@ -25,9 +25,15 @@
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Plots</a>
-                </li>
+                <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+    <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 40px, 0px);">
+      <a class="dropdown-item" href="temp.html">Temperature</a>
+      <a class="dropdown-item" href="humidity.html">Humidity</a>
+      <a class="dropdown-item" href="clouds.html">Cloudiness</a>
+      <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+    </div>
+  </li>
                 <li class="nav-item">
                     <a class="nav-link" href="comparisons.html">Comparison</a>
                 </li>
@@ -37,45 +43,57 @@
             </ul>
         </div>
     </nav>
-
-
     <div class="container">
         <div class="jumbotron">
             <h1 class="display-3">laTTitude</h1>
             <p class="lead">latitude with attitude.</p>
             <hr class="my-4">
-            <h2>Why laTTitude?</h2>
-<p>The purpose of laTTitude is to analyze how  weather changes with proximity to the equator.  </p>
-<p>To accomplish this, we first pulled data fromm the OpenWeatherMap API to assemble a dataset on over 500 cities. After assembling the
-    dataset, we used Seaborn and Matplotlib to plot various aspects of the weather verses the city's latitude. Factors that were included:
-    Temperature Cloudienss Wind Speed Humidity This site provides the source data and visualizations created as part of the
-    analysis as well as explainations and descriptions of any trends and correlations witnessed.</p>
+            <h2>How is weather impacted by proximity to the equator?</h2>
+            <p>Its common knowledge that weather is warmer near the equator.  This is because it recieves more direct exposure to sunlight than other areas of the planet such as the poles.  In what other ways does distance from the equator affect the weather?  In this exercise, we will explore the weather of 4000 randomly selected cities and plot the following against the latitude:</p>
             
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <ul>
+                <li>Maximum Temperature</li>
+                <li>% Humidty</li>
+                <li>% Cloudiness</li>
+                <li>Wind Speed</li>
 
-        </div>
-        <div class="card border-light mb-3">
-            <h3 class="card-header">Vizzes</h3>
-            <div class="card-body">
-            <h5 class="card-title">Something about weather data.</h5>
-            <h6 class="card-subtitle text-muted">what is this?</h6>
+            </ul>
             </div>
-            <div>
-            <img src="assets/vizzes.png" class="img-fluid" alt="Responsive image">
             </div>
-            <p class="lead">
-            <a class="btn btn-primary btn-lg" href="vizzes.html" role="button">Learn more!</a>
+            </div>
+            <p>The purpose of this project is to build a dashboard leveraging what we've learned about HTML, CSS, and JS.  In exploring the effect proximity to the equator has on different aspects of the weather, we will utilize the following technologies as well:</p>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <ul>
+                <li><a href="https://openweathermap.org/api">OpenWeatherMap API</a></li>
+                <li><a href="https://www.python.org/1">Python</a> (Pandas, Matplotlib, Numpy, CityPy, and Seaborn)</li>
+                <li><a href="http://getbootstrap.com/">Bootstrap 4.1.2</a></li>
+                <li><a href=" https://bootswatch.com/">Bootswatch1</a></li>
+          </ul>
+</div>
+<div class="col-sm-8">
+<img src="assets/Temp.png" class="img-fluid" alt="Responsive image">
+</div>
 
-            </p>
-        </div>
-            
-
-        </div>
 
 
-        <script src="../_vendor/jquery/dist/jquery.min.js"></script>
-        <script src="../_vendor/popper.js/dist/umd/popper.min.js"></script>
-        <script src="../_vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="../_assets/js/custom.js"></script>
+          </div>
+          </div>
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
